@@ -1,5 +1,7 @@
 # Resume Builder
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-resume--builder--seven--snowy--98.vercel.app-blue?style=for-the-badge)](https://resume-builder-seven-snowy-98.vercel.app)
+
 An AI-powered web app that generates tailored resumes and cover letters. Paste your resume, a job posting, and some extra context — the app runs through a guided prompt sequence, pauses for your feedback mid-way, then delivers a polished resume and cover letter.
 
 ## How It Works
