@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Resume Builder
 
-## Getting Started
+An AI-powered web app that generates tailored resumes and cover letters. Paste your resume, a job posting, and some extra context — the app runs through a guided prompt sequence, pauses for your feedback mid-way, then delivers a polished resume and cover letter.
 
-First, run the development server:
+## How It Works
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Input** — paste your resume, the job posting, and any extra context
+2. **AI Analysis** — the app analyzes the job requirements and your background
+3. **Draft** — a tailored, ATS-optimized resume is generated
+4. **Feedback** — you answer a few questions to refine the output
+5. **Final Output** — a revised resume and a personalized cover letter
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [Next.js](https://nextjs.org) — frontend + API routes
+- [OpenAI GPT-4o](https://openai.com) — powers the prompt sequence
+- [Vercel](https://vercel.com) — hosting and deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Live App
 
-## Learn More
+[resume-builder-seven-snowy-98.vercel.app](https://resume-builder-seven-snowy-98.vercel.app)
 
-To learn more about Next.js, take a look at the following resources:
+## Local Development
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Clone the repo
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Create a `.env.local` file:
+   ```
+   OPENAI_API_KEY=your-openai-api-key
+   NEXT_PUBLIC_PASSPHRASE=resumebuilder
+   ```
+4. Run the dev server:
+   ```bash
+   npm run dev
+   ```
+5. Open [http://localhost:3000](http://localhost:3000)
